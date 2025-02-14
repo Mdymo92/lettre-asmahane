@@ -28,12 +28,23 @@ h1 {
 
 /* Conteneur des GIFs */
 #gif-container {
-    display: none;
+    display: none; /* Caché par défaut */
+    margin-top: 20px;
+}
+
+/* Conteneur flex pour aligner les GIFs */
+.gif-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .gif-wrapper img {
     width: 150px;
-    margin: 10px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Bouton "Suivant" */

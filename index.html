@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre d'Amour</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Titre principal -->
+    <h1 id="title">🤍 Lettre à Asmahane 🤍</h1>
+
+    <!-- Cœur à cliquer -->
+    <div id="heart" onclick="showGifs()">❤️</div>
+
+    <!-- GIFs et bouton "Suivant" -->
+    <div id="gif-container">
+        <div class="gif-wrapper">
+            <img src="heart.gif" alt="Heart GIF">
+            <img src="love.gif" alt="Love GIF">
+        </div>
+        <button id="next-button" onclick="showLetterBase()">Suivant</button>
+    </div>
+
+<!-- Lettre de base -->
+    <div id="letter-base" class="letter">
+        <p>Chère Asmahane,</p>
+        <p>En cette journée de Saint-Valentin, je tiens à te dire combien ta beauté illumine le monde autour de toi. Le premier instant passé à tes côtés a été un cadeau précieux, et chaque détail de toi, de ton regard jusqu'à ton sourire, semble incarner la douceur et l'élégance.</p>
+        <p>Ta beauté n'est pas seulement extérieure, mais elle brille aussi dans chaque mot que tu prononces, dans la gentillesse de ton cœur et la profondeur de ton âme. Avec ta présence, tout s'illumine, comme si le soleil lui-même t'accompagnait. Ton rire, doux et sincère, résonne comme une mélodie qui chasse les nuages et apporte la chaleur.</p>
+        <p>Mais ce qui me touche le plus, c'est cette grâce subtile qui t'habite. Ce n'est pas juste ce que l'on voit, mais ce que l'on ressent en ta présence : une sérénité, une force tranquille, une beauté pure qui va bien au-delà de l'apparence. Tu es une véritable œuvre d'art, intemporelle et parfaite dans toute ta splendeur.</p>
+        <p>Je suis honoré d'avoir la chance de te connaître et d'apprécier chaque moment que tu partages avec moi. Aujourd'hui, je veux te rendre hommage pour tout ce que tu représentes : beauté, lumière, tendresse et amour.</p>
+        <p>Tu es un trésor rare et précieux, et je suis heureux de pouvoir te le dire.</p>
+        <p>Avec tout mon affection et mon admiration,</p>
+        <p>Ilyes</p>
+        <div id="roses-container">
+            <p>Choisis une rose :</p>
+            <div class="rose-wrapper">
+                <img src="rose_blanche.jpg" alt="Rose blanche" onclick="showLetter('blanche')">
+                <img src="rose_rouge.jpg" alt="Rose rouge" onclick="showLetter('rouge')">
+                <img src="rose_rose.jpg" alt="Rose rose" onclick="showLetter('rose')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Lettres spécifiques avec bouton retour -->
+    <div id="letter-blanche" class="letter">
+        <p>🤍🤍🤍</p>
+        <p>En te offrant cette rose blanche, je voulais te transmettre tout ce qu'elle représente. La rose blanche, symbole de pureté et d'innocence, incarne des qualités qui me rappellent immédiatement ton essence. Ta douceur, ton regard sincère, et cette lumière qui émane de toi, créent autour de toi une atmosphère calme et apaisante, tout comme cette fleur.</p>
+        <p>Elle est aussi le symbole de la bonté, de la générosité et de la franchise, des qualités que je vois en toi à chaque instant. Ta manière de toujours tendre la main, de faire preuve de bienveillance et de transparence dans tes actions me touche profondément. Chaque geste que tu fais est empreint d'une sincérité rare, et c'est un honneur de pouvoir en être témoin.</p>
+        <p>La rose blanche, tout comme toi, rappelle que la beauté se trouve dans la simplicité, et que la vraie grandeur réside dans l'authenticité et la bienveillance. Je suis convaincu que tu portes en toi cette lumière pure qui ne demande qu'à se déployer encore plus.</p>
+        <p>🤍🤍🤍</p>
+        <button class="back-button" onclick="showLetterBase()">Retour</button>
+    </div>
+
+    <div id="letter-rouge" class="letter">
+        <p>❤️❤️❤️</p>
+        <p>Je t'offre cette rose rouge, symbole de beauté, et elle est le reflet parfait de ce que je ressens en toi. La rose rouge incarne la magnificence et l'élégance, tout comme ta présence illumine chaque moment. Ta beauté, qu'elle soit intérieure ou extérieure, ne cesse d'éblouir ceux qui ont la chance de te connaître. Elle est à la fois douce et intense, captivante dans sa simplicité, mais infiniment riche dans sa profondeur.</p>
+        <p>La rose rouge, symbole de l'amour passionné et de la beauté intemporelle, est aussi un hommage à la force de ton caractère. Comme cette fleur qui sait s'épanouir avec grâce, tu embrasses la vie avec une énergie et une confiance qui ne laissent personne indifférent. Ta beauté est un mélange unique de gentillesse, de force et de lumière, qui inspire ceux qui croisent ton chemin.</p>
+        <p>En t'offrant cette rose, je veux te rappeler que ta beauté est un cadeau rare et précieux pour ce monde.</p>
+        <p>❤️❤️❤️</p>
+        <button class="back-button" onclick="showLetterBase()">Retour</button>
+    </div>
+
+    <div id="letter-rose" class="letter">
+        <p>🩷🩷🩷</p>
+        <p>En te remettant cette rose rose, je tiens à te transmettre tout ce qu'elle représente : la tendresse, la douceur et la délicatesse. Comme cette fleur, tu es une source constante de réconfort et de bienveillance, apportant autour de toi une sensation de sérénité et de calme. Ta présence est apaisante, et ta douceur fait de chaque moment passé à tes côtés un instant précieux et agréable.
+        </p>
+        <p>La rose rose est aussi le symbole d'un amour tendre et sincère, un amour qui ne cherche pas à briller mais à être un soutien constant, un amour plein de respect et de délicatesse. À travers tes gestes, tes mots et ton regard, tu déploies une tendresse rare qui réchauffe les cœurs et fait grandir ceux qui t'entourent.
+        </p>
+        <p>Je voulais que cette rose, toute simple et pleine de douceur, te rappelle combien tu es importante, combien ta gentillesse et ta tendresse enrichissent la vie de ceux qui ont la chance de te connaître.</p>
+        <p>🩷🩷🩷</p>
+        <button class="back-button" onclick="showLetterBase()">Retour</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
